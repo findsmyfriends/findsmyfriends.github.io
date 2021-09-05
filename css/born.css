@@ -97,7 +97,7 @@ body {
   }
   
   .grid-item {
-    padding: 5px;
+    padding: 8px;
     text-align: center;
     text-decoration:none;
     text-size-adjust: inherit;
@@ -111,7 +111,7 @@ body {
   }
     
   .grid-item span {
-    padding: 13px;
+    padding: 18px;
     font-size: 25px;
     text-align: center;
     color:rgb(107, 107, 107);
