@@ -57,26 +57,34 @@ body {
   position: fixed;
   text-align: center;
   top: 16%;
-  height: 290px;
+  height: 100%;
   width: 100%;
   display: grid;
   grid-row-gap:  120px;
   grid-template-columns: auto ;
+  object-fit: cover;
   
 
 }
 .grid-item-container {
   padding: 5px;
+  object-fit: cover;
   text-align: center;
   text-decoration:none;
   text-size-adjust: auto;
 
 }
+.grid-item-container img   {
+  width:100%;
+  height:71%;
+  object-fit: cover;
+  border-radius: 10px;
+} 
 .card-back1 {
   z-index: -1;
   position: fixed;
   text-align: center;
-  top: 17%;
+  top: 29%;
   height: 290px;
   width: 100%;
   display: grid;
@@ -90,11 +98,17 @@ body {
   text-decoration:none;
   text-size-adjust: auto;
 }
+.grid-item-back1 img   {
+  width:100%;
+  height:71%;
+  object-fit: cover;
+  border-radius: 10px;
+} 
 .card-back2 {
   z-index: -2;
   position: fixed;
   text-align: center;
-  top: 18.5%;
+  top: 31%;
   height: 290px;
   width: 100%;
   display: grid;
@@ -107,7 +121,12 @@ body {
   text-decoration:none;
   text-size-adjust: auto;
 }
- 
+.grid-item-back2 img   {
+  width:100%;
+  height:71%;
+  object-fit: cover;
+  border-radius: 10px;
+} 
 .flip-card {
   background-color: transparent;
   width: 400px;
