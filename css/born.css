@@ -2,6 +2,101 @@ body {
     margin: 0;
   }
 
+.container {
+  position: fixed;
+  text-align: center;
+  top: 12%;
+  height: 290px;
+  width: 100%;
+  display: grid;
+  grid-row-gap:  120px;
+  grid-template-columns: auto ;
+  
+
+}
+.grid-item-container {
+  padding: 5px;
+  text-align: center;
+  text-decoration:none;
+  text-size-adjust: auto;
+
+}
+.card-back1 {
+  z-index: -1;
+  position: fixed;
+  text-align: center;
+  top: 14%;
+  height: 290px;
+  width: 100%;
+  display: grid;
+  grid-row-gap:  120px;
+  grid-template-columns: auto ;
+  border-bottom-color: black;
+}
+.grid-item-back1 {
+  padding: 5px;
+  text-align: center;
+  text-decoration:none;
+  text-size-adjust: auto;
+}
+.card-back2 {
+  z-index: -2;
+  position: fixed;
+  text-align: center;
+  top: 16%;
+  height: 290px;
+  width: 100%;
+  display: grid;
+  grid-row-gap:  120px;
+  grid-template-columns: auto ;
+}
+.grid-item-back2 {
+  padding: 5px;
+  text-align: center;
+  text-decoration:none;
+  text-size-adjust: auto;
+}
+ 
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 450px;
+  perspective: 1000px;
+  justify-content: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
 
   .tooltip {
     position: relative;
@@ -16,7 +111,7 @@ body {
     background-color: rgb(128, 128, 128);
     color: #fff;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 18px;
     padding: 5px 1;
     
     
@@ -24,10 +119,10 @@ body {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    bottom: 130%;
+    bottom: 120%;
     left: 50%;
     right: 50%;
-    margin-left: -60px;
+    margin-left: -70px;
   }
   
   .tooltip:hover .tooltiptext {
@@ -35,16 +130,18 @@ body {
   }
   
   .nav-mobile .nav-wrapper {
+    z-index: -1;
     position: fixed;
     top: 0;
-    height: 250px;
+    height: 290px;
     width: 100%;
     display: grid;
     grid-row-gap:  120px;
     grid-template-columns: 60px auto 60px 60px ;
-    background-color: #b8e98b;    
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px;
+    background: rgb(195,15,49);
+    background: linear-gradient(0deg, rgba(195,15,49,1) 27%, rgba(255,0,155,1) 82%);
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
     }
   
   .grid-item-nav .logo-name{
@@ -98,7 +195,7 @@ body {
   }
   
   .grid-item {
-    padding: 8px;
+    padding: 4px;
     text-align: center;
     text-decoration:none;
     text-size-adjust: inherit;
@@ -112,7 +209,7 @@ body {
   }
     
   .grid-item span {
-    padding: 18px;
+    padding: 16px;
     font-size: 25px;
     text-align: center;
     color:rgb(107, 107, 107);
