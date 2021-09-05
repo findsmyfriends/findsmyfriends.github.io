@@ -37,13 +37,14 @@ body {
   .nav-mobile .nav-wrapper {
     position: fixed;
     top: 0;
-    height: 56px;
+    height: 250px;
     width: 100%;
     display: grid;
     grid-row-gap:  120px;
     grid-template-columns: 60px auto 60px 60px ;
-    background-color: #ee6e73;    
-    
+    background-color: #b8e98b;    
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
     }
   
   .grid-item-nav .logo-name{
