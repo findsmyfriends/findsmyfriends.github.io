@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+  }
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .tooltip .tooltiptext {
+    text-size-adjust: auto;
+    visibility: hidden;
+    width: 100px;
+    background-color: rgb(128, 128, 128);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 1;
+    
+    
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    right: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .nav-mobile .nav-wrapper {
+    position: fixed;
+    top: 0;
+    height: 56px;
+    width: 100%;
+    display: grid;
+    grid-row-gap:  120px;
+    grid-template-columns: 60px auto 60px 60px ;
+    background-color: #ee6e73;    
+    
+    }
+  
+  .grid-item-nav .logo-name{
+      color: white;
+      font-family: sans-serif;
+      font-size: 25px;
+      font-weight: bolds;
+      text-size-adjust: auto;
+      left: 50px;
+      top: 0;
+      position: absolute;
+     
+      
+      
+  
+    }
+  .grid-item-nav {
+      padding: 5px;
+      text-align: center;
+      text-decoration:none;
+      text-size-adjust: auto;
+
+  }
+
+ 
+      
+  .grid-item-nav span {
+      padding: 10px;
+      font-size: 25px;
+      text-align: center;
+      color:rgb(255, 255, 255);
+      justify-content: center;
+      text-size-adjust: auto;
+  }
+
+
+  .button-footer-mobile .grid-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto auto ;
+    background-color: #ffffff;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-radius: 100px;
+
+  }
+  
+  .grid-item {
+    padding: 5px;
+    text-align: center;
+    text-decoration:none;
+    text-size-adjust: inherit;
+    border-radius: 100px;
+    justify-content: center;
+    text-size-adjust: auto;
+  
+
+  }
+  .grid-item:hover {
+    background-color: rgb(253, 181, 235);
+  }
+    
+  .grid-item span {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    color:rgb(107, 107, 107);
+    justify-content: center;
+    text-size-adjust: auto;
+  }
+
