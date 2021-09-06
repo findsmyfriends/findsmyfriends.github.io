@@ -131,12 +131,12 @@ body {
   .tooltip .tooltiptext {
     text-size-adjust: auto;
     visibility: hidden;
-    width: 50px;
-    background-color: rgb(128, 128, 128);
+    width: 80px;
+    background-color: rgb(255, 149, 220);
     color: #fff;
     text-align: center;
     border-radius: 20px;
-    padding: 5px 1;
+    padding: 5px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: 500;
@@ -145,11 +145,12 @@ body {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    bottom: 120%;
+    bottom: 110%;
     left: 50%;
     right: 50%;
-    margin-left: -40px;
-    margin-right: 50px;
+    margin-left: -39px;
+  
+   
   }
 
   
@@ -165,7 +166,7 @@ body {
     width: 100%;
     display: grid;
     grid-row-gap:  120px;
-    grid-template-columns: 60px auto 60px 60px ;
+    grid-template-columns: 60px auto 40px 60px ;
     background: rgb(195,15,49);
     background: linear-gradient(0deg, rgba(195,15,49,1) 27%, rgba(255,0,155,1) 82%);
     border-bottom-left-radius: 70px;
@@ -174,9 +175,9 @@ body {
   
   .grid-item-nav .logo-name{
       color: white;
-      font-family: sans-serif;
-      font-size: 25px;
-      font-weight: bolds;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 26px;
+      font-weight: 1000;
       text-size-adjust: auto;
       left: 50px;
       top: 0;
