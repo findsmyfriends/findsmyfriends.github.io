@@ -131,13 +131,15 @@ body {
   .tooltip .tooltiptext {
     text-size-adjust: auto;
     visibility: hidden;
-    width: 100px;
+    width: 50px;
     background-color: rgb(128, 128, 128);
     color: #fff;
     text-align: center;
-    border-radius: 18px;
+    border-radius: 20px;
     padding: 5px 1;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
     
     
     /* Position the tooltip */
@@ -146,8 +148,10 @@ body {
     bottom: 120%;
     left: 50%;
     right: 50%;
-    margin-left: -70px;
+    margin-left: -40px;
+    margin-right: 50px;
   }
+
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
