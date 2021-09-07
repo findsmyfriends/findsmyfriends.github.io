@@ -271,9 +271,8 @@ body {
 
   .skills {
     position: fixed;
-    top: 67%;
-    
-    transform: translate(10%, 10%);
+    top: 11%;
+    transform: translate(12%, 10%);
     border-radius: 10px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   }
