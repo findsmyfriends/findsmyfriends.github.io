@@ -17,9 +17,9 @@ body {
   width: 120px;
   height: 120px;
   margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
+  border: 20px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 20px solid #db3495;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -279,17 +279,20 @@ body {
   }
   
   .skills-bar {
-    padding: 2px 20px;
+    padding: 10px 20px;
   }
   
   .skills-bar .bar {
-    margin: 5px 5;
+    margin: 15px 5;
   }
   
   .skills-bar .bar .info span {
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #ff0697;
+    padding: 1px 8px;
+    border-radius: 3px;
   }
   
   .skills-bar .bar .info {
@@ -297,6 +300,8 @@ body {
     color: #ffffff;
     font: 1em sans-serif;
     font-weight: 500;
+    border-top-color: #07374a;
+    
   }
   
   .skills-bar .bar .progress-line {
@@ -372,4 +377,56 @@ body {
       .skills-bar .bar .progress-line{
           width: 100%;
       }
-  }      
+  }   
+  #slider{
+    margin:0 auto;
+    width:80%;
+    overflow:hidden;
+  }
+  
+  .slides{
+    overflow:hidden;
+    animation-name:fade;
+    animation-duration:1s;
+    display:none;
+  }
+  
+  img{
+    position: relative;
+    width:100%;
+    height:67%;
+    object-fit: cover;
+    border-radius: 10px;
+    border-radius: 15px;
+  }
+  
+  #dot{
+    margin:0 auto;
+    text-align:center;
+  }
+  .dot{
+    display:inline-block;
+    border-radius:50%;
+    background:#d3d3d3;
+    /* padding:5px; */
+    /* margin:10px 5px; */
+  }
+  
+  .active{
+    background:black;
+  }
+  
+  @media (max-width:567px){
+    #slider{
+      width:100%;
+  
+    }
+  }
+  
+  #heading{
+    display:block;
+    text-align:center;
+    font-size:2em;
+    margin: 5px 0px;
+  
+  }   
