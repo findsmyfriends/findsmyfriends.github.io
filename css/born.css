@@ -56,18 +56,19 @@ body {
 .container {
   position: fixed;
   text-align: center;
-  top: 8%;
+  top: 10%;
   height: 100%;
   width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* background-color: white; */
   display: grid;
   grid-row-gap:  120px;
   grid-template-columns: auto ;
-  object-fit: cover;
   
-
 }
 .grid-item-container {
-  padding: 5px;
   object-fit: cover;
   text-align: center;
   text-decoration:none;
@@ -75,11 +76,30 @@ body {
 
 }
 .grid-item-container img   {
+  position: relative;
   width:100%;
-  height:72%;
+  height:67%;
   object-fit: cover;
   border-radius: 10px;
-} 
+  border-radius: 15px;
+}
+
+.container .bodycard {
+  z-index: -1;
+  position:absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(228, 228, 228);
+  height:59%;
+  width: 96%;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transform: translate(2%, 1%);
+}
+
 
 .flip-card {
   background-color: transparent;
@@ -166,7 +186,7 @@ body {
     width: 100%;
     display: grid;
     grid-row-gap:  120px;
-    grid-template-columns: 60px auto 40px 60px ;
+    grid-template-columns: 60px auto 40px 90px ;
     background: rgb(195,15,49);
     background: linear-gradient(0deg, rgba(195,15,49,1) 27%, rgba(255,0,155,1) 82%);
     border-bottom-left-radius: 70px;
@@ -188,7 +208,7 @@ body {
   
     }
   .grid-item-nav {
-      padding: 5px;
+      padding: 6.5px;
       text-align: center;
       text-decoration:none;
       text-size-adjust: auto;
@@ -198,7 +218,7 @@ body {
  
       
   .grid-item-nav span {
-      padding: 15px;
+      padding: 20px;
       font-size: 25px;
       text-align: center;
       color:rgb(255, 255, 255);
@@ -218,7 +238,8 @@ body {
     background-color: #ffffff;
     border-top: 2px solid rgb(204, 204, 204);
     border-bottom: 3px solid rgb(179, 179, 179);
-    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     
 
   }
@@ -235,6 +256,8 @@ body {
   }
   .grid-item:hover {
     background-color: rgb(253, 181, 235);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
     
   .grid-item span {
@@ -246,3 +269,107 @@ body {
     text-size-adjust: auto;
   }
 
+  .skills {
+    position: fixed;
+    top: 67%;
+    
+    transform: translate(10%, 10%);
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  
+  .skills-bar {
+    padding: 2px 20px;
+  }
+  
+  .skills-bar .bar {
+    margin: 5px 5;
+  }
+  
+  .skills-bar .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .skills-bar .bar .info {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font: 1em sans-serif;
+    font-weight: 500;
+  }
+  
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 550px;
+    background: whitesmoke;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .bar .progress-line span {
+    position: absolute;
+    background: red;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+
+  .progress-line .c {
+    width: 90%;
+  }
+  
+  .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    top: -14px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #07374a;
+  }
+  
+  .bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #f0f0f0;
+    font-size: 12px;
+    font-weight: 700;
+    background: #07374a;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  
+  
+  .progress-line .c::after {
+    content: "90%";
+  }
+  
+  /* ////........Media Query........//// */
+  
+  @media (max-width: 800px) {
+      .skills{
+          width: 80%;
+      }
+  
+      .skills-bar .bar .progress-line{
+          width: 100%;
+      }
+  }      
