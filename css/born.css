@@ -228,10 +228,10 @@ body {
       
   }
   .name-icons{
-    font: optional;
+    padding-bottom: 0px;
     font-size: 12px;
     font-weight: 400;
-    font-family: ;
+    font-family:Arial, Helvetica, sans-serif;
   }
 
   .button-footer-mobile .grid-container {
@@ -243,7 +243,6 @@ body {
     grid-template-columns: 25% 25% 25% 25% ;
     background-color: #ffffff;
     border-top: 2px solid rgb(204, 204, 204);
-    border-bottom: 3px solid rgb(179, 179, 179);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     /* border-radius: 50px; */
@@ -252,6 +251,7 @@ body {
   }
   
   .grid-item {
+    padding-top: 6px;
     text-align: center;
     text-decoration:none;
     text-size-adjust: inherit;
@@ -267,8 +267,7 @@ body {
   }
     
   .grid-item span {
-    padding: 6px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     color:rgb(107, 107, 107);
     justify-content: center;
