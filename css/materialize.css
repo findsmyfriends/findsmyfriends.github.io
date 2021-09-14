@@ -5088,8 +5088,8 @@ small {
 }
 
 .btn-floating.btn-small {
-  width: 32.4px;
-  height: 32.4px;
+  width: 35px;
+  height: 35px;
 }
 
 .btn-floating.btn-small.halfway-fab {
@@ -5097,7 +5097,7 @@ small {
 }
 
 .btn-floating.btn-small i {
-  line-height: 32.4px;
+  line-height: 35px;
 }
 
 .btn-floating.halfway-fab {
