@@ -17,13 +17,30 @@ body {
   z-index: -1;
   width: 120px;
   height: 120px;
-  margin: -76px 0 0 -76px;
+  margin: -60px 0 0 -60px;
   border: 20px solid #f3f3f3;
   border-radius: 50%;
   border-top: 20px solid #db3495;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+#titleName {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+
+}
+
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
