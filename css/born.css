@@ -119,11 +119,13 @@ body {
     text-decoration: none;
     grid-row-gap: 50px;
     grid-template-columns: 20% 20% 20% 20% 20% ;
-    font-size: 12px;
+    font-size: 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 10px;
+    margin-right: 10px; */
     margin-bottom: 10px;
   }
   
