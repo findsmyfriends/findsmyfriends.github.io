@@ -377,8 +377,7 @@ body {
     grid-template-columns: 25% 25% 25% 25% ;
     background-color: #ffffff;
     border-top: 2px solid rgb(204, 204, 204);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+   
     /* border-radius: 50px; */
     
 
