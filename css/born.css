@@ -108,8 +108,12 @@ body {
     align-content: center;
   }
   .box a {
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
   }
    
