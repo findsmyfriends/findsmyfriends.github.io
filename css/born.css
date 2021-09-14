@@ -412,7 +412,7 @@ body {
     position:relative;
     align-self: end;
     border-width: 6px 2;
-    background: linear-gradient(0deg, rgb(5, 5, 5,0.85) 27%, rgb(48, 48, 48,1) 82%);;
+    background: linear-gradient(0deg, rgb(5, 5, 5,0.2) 5%, rgb(0, 0, 0) 68%);;
     background-color:rgb(0, 0, 0,0.4);
     margin-bottom: 12px;
     border-bottom-left-radius:20px;
