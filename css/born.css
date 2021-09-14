@@ -106,9 +106,13 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
-    padding: 10px;
   }
-      
+  .box a {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+   
 .container {
   position: fixed;
   text-align: center;
